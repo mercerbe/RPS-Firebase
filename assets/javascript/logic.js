@@ -1,2 +1,1 @@
 //backstretch
-$("body").backstretch();

@@ -14,10 +14,47 @@ body {
   box-sizing: inherit;
   position: relative;
   margin-bottom: 371px;
-  background-color: rgb(244,243,243);
+  background-color: rgb(51,38,19);
+}
+
+.jumbotron-fluid {
+  color: white;
+  padding: 4%;
+  border-bottom: 3px solid rgb(245,113,18);
+  padding-bottom: 3%;
+  background-color: rgb(5,133,123);
+  width: 100%;
+}
+
+h1 {
+  text-shadow: 3px 3px 6px rgb(245,113,18);
+  font-size: 65px;
+}
+
+.card {
+  color: black;
+}
+
+#instructions {
+  max-width: 400px;
+  max-height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-width: 650px;
+  margin-top:40%;
 }
 
 #footer {
+  border-top: 3px solid rgb(245,113,18);
   background-color: #343a40;
   color: white;
   width: 100%;
@@ -33,7 +70,7 @@ body {
     bottom: -1000px;
   }
   h1 {
-    font-size: 50px;
+    font-size: 18px;
   }
 
 
