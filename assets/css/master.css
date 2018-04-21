@@ -1,0 +1,47 @@
+html {
+  height: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after, {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+  min-width: 100%;
+  box-sizing: inherit;
+  position: relative;
+  margin-bottom: 371px;
+  background-color: rgb(244,243,243);
+}
+
+#footer {
+  background-color: #343a40;
+  color: white;
+  width: 100%;
+  position: absolute;
+  padding-top: 1%;
+  bottom: -371px;
+  left: 0;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  #footer {
+    bottom: -1000px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  #footer {
+    bottom: -800px;
+  }
+
+}
