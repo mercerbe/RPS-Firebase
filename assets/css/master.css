@@ -24,6 +24,7 @@ body {
   padding-bottom: 3%;
   background-color: rgb(5,133,123);
   width: 100%;
+  margin-bottom: 50px;
 }
 
 h1 {
@@ -34,12 +35,18 @@ h1 {
 .card {
   color: black;
   text-align: center;
+  border: 3px solid rgb(5,133,123);
 }
 
-.btn {
+.btn-jumbo {
   background-color: rgb(245,113,18);
   color: white;
   width: 150px;
+}
+
+.player-btn {
+  background-color: rgb(245,113,18);
+  color: white;
 }
 
 #instructions {
@@ -57,7 +64,7 @@ h1 {
   margin-right: auto;
   width: 50%;
   min-width: 650px;
-  margin-top:40%;
+  margin-top:10%;
 }
 
 #footer {
@@ -77,10 +84,10 @@ h1 {
     bottom: -1000px;
   }
   h1 {
-    font-size: 18px;
+    font-size: 32px;
   }
   #logo {
-    min-width: 400px;
+    min-width: 350px;
   }
   #instructions {
     max-width: 190px;
