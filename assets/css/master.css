@@ -48,8 +48,13 @@ h1 {
   background-color: rgb(245,113,18);
 }
 
-.space {
 
+#loop {
+  border-radius: 50%;
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #instructions {
@@ -94,6 +99,9 @@ h1 {
   }
   #instructions {
     max-width: 190px;
+  }
+  #loop {
+
   }
 
 
