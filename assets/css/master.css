@@ -46,7 +46,10 @@ h1 {
 
 .player-btn {
   background-color: rgb(245,113,18);
-  color: white;
+}
+
+.space {
+
 }
 
 #instructions {
