@@ -26,7 +26,7 @@ body {
   background-color: rgb(5,133,123);
   width: 100%;
   margin-bottom: 50px;
-  background-image: url("https://media.giphy.com/media/b0I9c0NXRMS1W/giphy-downsized.gif");
+  background-image: url();
 }
 
 h1 {
@@ -87,6 +87,7 @@ h1 {
 .frame {
   border: 3px solid rgb(247,41,103);
   margin-top: 10%;
+
 }
 
 #footer {
