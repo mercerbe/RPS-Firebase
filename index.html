@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Rock+Salt" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/chat.css">
   <link rel="stylesheet" href="assets/css/master.css">
   <!-- Firebase Reference -->
   <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
@@ -19,61 +21,77 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="jumbotron-fluid">
-      <div class="container">
-      <h1 class="">Rock+Paper+Scissors</h1>
-      <p>
-        <button class="btn btn-lg btn-jumbo" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Instructions</button>
-      </p>
-      <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-          <p>When connected with another player, wait for prompt to play your turn. On your turn, tap R, P or S to play Rock, Paper or Scissors respectivly</p>
-          <img id="instructions" src="assets/images/instructions.jpg" alt="instructions">
+  <main>
+    <div class="wrapper">
+      <div class="jumbotron jumbotron-fluid text-wrap">
+        <div class="container">
+          <h1 class="">Rock + Paper + Scissors</h1>
+          <p>
+            <button class="btn btn-lg btn-jumbo" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Instructions</button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <p>When connected with another player, wait for prompt to play your turn. On your turn, tap R, P or S to play Rock, Paper or Scissors respectivly</p>
+              <img id="instructions" src="assets/images/instructions.jpg" alt="instructions">
+            </div>
+          </div>
+
+          <p class="lead">
+            <button class="btn btn-lg btn-jumbo" role="button">Join Game</button>
+          </p>
         </div>
       </div>
-      <hr>
-      <p class="lead">
-        <button class="btn btn-lg btn-jumbo" role="button">Join Game</button>
-      </p>
-    </div>
-    </div>
-  <!--Player Cards -->
-  <div class="container">
-    <div class="row">
-  <div class="w-30">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Player 1</h5>
-        <button class="btn player-btn"><i class="fas fa-hand-paper"></i></button>
-        <button class="btn player-btn"><i class="fas fa-hand-rock"></i></button>
-        <button class="btn player-btn"><i class="fas fa-hand-scissors"></i></button>
-        <p>wins:</p>
-        <p>losses:</p>
+      <!--Player Cards -->
+      <div class="container">
+        <div class="row">
+          <div class="w-30">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Player 1</h5>
+                <button class="btn player-btn"><i class="fas fa-hand-paper"></i></button>
+                <button class="btn player-btn"><i class="fas fa-hand-rock"></i></button>
+                <button class="btn player-btn"><i class="fas fa-hand-scissors"></i></button>
+                <p>wins:</p>
+                <p>losses:</p>
+              </div>
+            </div>
+          </div>
+          <div class="space w-30">
+          </div>
+          <div class="w-30 ml-auto">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Player 2</h5>
+                <button class="btn player-btn"><i class="fas fa-hand-paper"></i></button>
+                <button class="btn player-btn"><i class="fas fa-hand-rock"></i></button>
+                <button class="btn player-btn"><i class="fas fa-hand-scissors"></i></button>
+                <p>wins:</p>
+                <p>losses:</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="space w-30">
-  </div>
-  <div class="w-30 ml-auto">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Player 2</h5>
-        <button class="btn player-btn"><i class="fas fa-hand-paper"></i></button>
-        <button class="btn player-btn"><i class="fas fa-hand-rock"></i></button>
-        <button class="btn player-btn"><i class="fas fa-hand-scissors"></i></button>
-        <p>wins:</p>
-        <p>losses:</p>
+      <!--middle image-->
+
+      <!--chatbox-->
+      <div class="col-sm-3 col-sm-offset-4 frame">
+        <ul class=chatlist></ul>
+        <div>
+          <div class="msj-rta macro">
+            <div class="text chattext chattext-r text-r">
+              <input class="mytext" placeholder="Type a message" />
+              <span><i class="fas fa-paper-plane"></i></span>
+            </div>
+
+          </div>
+          <div style="padding:10px;">
+          </div>
+        </div>
       </div>
+
     </div>
-  </div>
-</div>
-  </div>
-    <!--middle image-->
-    <img id="loop" class="img-fluid" src="https://media.giphy.com/media/b0I9c0NXRMS1W/giphy-downsized.gif" alt="gif">
-    <img id="logo" src="assets/images/rps_logo.jpg" alt="RPS">
-    <!-- -->
-  </div>
+  </main>
   <!--footer-->
   <section id="footer">
     <div class="container-fluid">
