@@ -92,6 +92,7 @@ h1 {
 }
 
 #footer {
+  font-family: 'Lato', sans-serif;
   border-top: 3px solid rgb(247,41,103);
   background-color: #343a40;
   color: white;

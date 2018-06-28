@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Rock+Salt" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/chat.css">
   <link rel="stylesheet" href="assets/css/master.css">
@@ -27,7 +28,7 @@
         <div class="container">
           <h1 class="">Rock + Paper + Scissors</h1>
           <p>
-            <button class="btn btn-lg btn-jumbo" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Instructions</button>
+            <button class="btn btn-lg btn-jumbo" id="instructions_btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Instructions</button>
           </p>
           <div class="collapse" id="collapseExample">
             <div class="card card-body">
@@ -35,12 +36,19 @@
               <img id="instructions" src="assets/images/instructions.jpg" alt="instructions">
             </div>
           </div>
-
-          <p class="lead">
-            <button class="btn btn-lg btn-jumbo" role="button">Join Game</button>
-          </p>
         </div>
       </div>
+
+      <!-- timer -->
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Timer</h4>
+            <span id="timer">0:00</span>
+          </div>
+        </div>
+      </div>
+      <br>
       <!--Player Cards -->
       <div class="container">
         <div class="row">
@@ -48,9 +56,9 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Player 1</h5>
-                <button class="btn player-btn"><i class="fas fa-hand-paper"></i></button>
-                <button class="btn player-btn"><i class="fas fa-hand-rock"></i></button>
-                <button class="btn player-btn"><i class="fas fa-hand-scissors"></i></button>
+                <button class="btn player-btn paper"><i class="fas fa-hand-paper"></i></button>
+                <button class="btn player-btn rock"><i class="fas fa-hand-rock"></i></button>
+                <button class="btn player-btn scissors"><i class="fas fa-hand-scissors"></i></button>
                 <p>wins:</p>
                 <p>losses:</p>
               </div>
@@ -62,9 +70,9 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Player 2</h5>
-                <button class="btn player-btn"><i class="fas fa-hand-paper"></i></button>
-                <button class="btn player-btn"><i class="fas fa-hand-rock"></i></button>
-                <button class="btn player-btn"><i class="fas fa-hand-scissors"></i></button>
+                <button class="btn player-btn paper"><i class="fas fa-hand-paper"></i></button>
+                <button class="btn player-btn rock"><i class="fas fa-hand-rock"></i></button>
+                <button class="btn player-btn scissors"><i class="fas fa-hand-scissors"></i></button>
                 <p>wins:</p>
                 <p>losses:</p>
               </div>
@@ -81,7 +89,7 @@
           <div class="msj-rta macro">
             <div class="text chattext chattext-r text-r">
               <input class="mytext" placeholder="Type a message" />
-              <span><i class="fas fa-paper-plane"></i></span>
+              <button class="btn"><span><i class="fas fa-paper-plane"></i></span></button>
             </div>
 
           </div>
@@ -100,10 +108,8 @@
           <h5>Quick Links</h5>
           <ul class="list-unstyled quick-links">
             <li><a class="links" href="https://mercerbe.github.io/"><i class="fa fa-angle-double-right links"></i>Home</a></li>
-            <li><a class="links" href="javascript:void();"><i class="fa fa-angle-double-right links"></i>About Me</a></li>
             <li><a class="links" href="javascript:void();"><i class="fa fa-angle-double-right links"></i>Contact</a></li>
             <li><a class="links" href="javascript:void();"><i class="fa fa-angle-double-right links"></i>Github Repos</a></li>
-            <li><a class="links" href="javascript:void();"><i class="fa fa-angle-double-right links"></i>Music Inquires</a></li>
           </ul>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 mt-2 mt-sm-5">
@@ -121,8 +127,6 @@
           <h5>Other Projects</h5>
           <ul class="list-unstyled quick-links">
             <li><a class="links" href="javascript:void();"><i class="fa fa-angle-double-right links"></i>Crystal Game</a></li>
-            <li><a class="links" href="javascript:void();"><i class="fa fa-angle-double-right links"></i>Psychic Game</a></li>
-            <li><a class="links" href="javascript:void();"><i class="fa fa-angle-double-right links"></i>Hangman Game</a></li>
             <li><a class="links" href="javascript:void();"><i class="fa fa-angle-double-right links"></i>RPG Game</a></li>
             <li><a class="links" href="javascript:void();"><i class="fa fa-angle-double-right links"></i>Trivia Game</a></li>
           </ul>
